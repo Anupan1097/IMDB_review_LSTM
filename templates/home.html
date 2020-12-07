@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Movie Review prediction</title>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1> Movie Review prediction </h1>
+        <br><br>
+        <form action= '/predict' method = "POST">
+            <fieldset>
+                <legend>Please enter the review text </legend>
+                <input type="text" name = "text" id = "text" required>
+            </fieldset><br>
+
+            <!--Crearting Submit button-->
+            <input type="submit" value="Submit">
+            
+        </form>
+        <br>
+        <h3>{{prediction_text}} </h3>
+        <br>
+
+        <p>@2020 Anupam Borah </p>
+
+    </body>
+
+</html>
